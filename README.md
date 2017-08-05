@@ -1,6 +1,6 @@
 # Weekend Two - Build A Calculator
 
-## Small steps
+## Take Small steps to build this project
 
 ### Client side
 - [x] Create base HTML with input boxes and buttons
@@ -8,6 +8,6 @@
 
 
 
-## Server side
+### Server side
 - [x] Setup base app.js
   - [x] Require express and body-parser. Include port number, middleware, app.use for bodyParser and app.listen
