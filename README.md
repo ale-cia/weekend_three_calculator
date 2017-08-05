@@ -1,9 +1,9 @@
 # Weekend Two - Build A Calculator
 
-### Small steps
+## Small steps
 
-## Client side
-- [x] Create base HTMl with input boxes and buttons
+### Client side
+- [x] Create base HTML with input boxes and buttons
   - [x] Make sure files are sourced in
 
 
