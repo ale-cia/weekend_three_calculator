@@ -5,8 +5,9 @@
 ### Client side
 - [x] Create base HTML with input boxes and buttons
   - [x] Make sure files are sourced in
-- [] Verify jQuery is working
-- [] Test buttons
+- [x] Verify jQuery is working
+- [x] Create event handlers
+- [x] Test buttons
 
 
 
