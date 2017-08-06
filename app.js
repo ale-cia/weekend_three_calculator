@@ -22,6 +22,10 @@ app.post('/operation', function(req, res){
   var getResult = req.body;
 });
 
+app.get('/operation', function(req, res){
+	res.send(calc.results);
+});
+
 //Take in results and determine type to make calculations
 function calculate(result) {
 	//compare
@@ -30,13 +34,18 @@ function calculate(result) {
    var operand = result.type;
 
    if(operand === 'add'){
-	  calc.add(numOne, numTwo);
+	  var x = calc.add(numOne, numTwo);
+	  //push the result into the array
+	  calcResult.push(x);
   } else if (operand === 'subtract') {
-	  calc.subtract(numOne, numTwo);
+	   var x = calc.subtract(numOne, numTwo);
+	  calcResult.push(x);
   } else if (operand === 'multiply') {
-	  calc.multiply(numOne, numTwo);
+	  var x = calc.multiply(numOne, numTwo);
+	  calcResult.push(x);
   } else (operand === 'divide') {
-	  calc.divide(numOne, numTwo);
+	  var x = calc.divide(numOne, numTwo);
+	  calcResult.push(x);
   }
 }
 

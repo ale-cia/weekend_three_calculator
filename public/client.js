@@ -95,6 +95,13 @@ $(document).ready(function(){
                 console.log(calcData);
             }
         });
+        $.ajax({
+            method: 'GET',
+            url: '/operation',
+            success: function(response){
+                console.log(response);
+            }
+        });
    }); //#numOne button click
 
 
@@ -102,11 +109,6 @@ $(document).ready(function(){
    //      console.log(numOne);
    //      console.log('equal button clicked');
    // });
-
-
-
-
-
 
 
 
