@@ -9,6 +9,7 @@
 - [x] Create event handlers
 - [x] Test buttons
 - [x] Create variables for input boxes
+- [x] Create and test equals button
 
 
 
