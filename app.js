@@ -8,7 +8,7 @@ var port = 5000;
 var calc = require('./calculations.js');
 console.log(calc);
 
-//initili
+//initilize
 var calcResult = [];
 
 app.use(express.static('public'));
@@ -23,7 +23,7 @@ app.post('/operation', function(req, res){
 });
 
 app.get('/operation', function(req, res){
-	res.send(calc.results);
+	res.send(calcResult);
 });
 
 //Take in results and determine type to make calculations
@@ -32,6 +32,9 @@ function calculate(result) {
    var numOne = result.numOne;
    var numTwo = result.numTwo;
    var operand = result.type;
+
+   //
+   calcResult = [];
 
    if(operand === 'add'){
 	  var x = calc.add(numOne, numTwo);
@@ -44,13 +47,14 @@ function calculate(result) {
 	  var x = calc.multiply(numOne, numTwo);
 	  calcResult.push(x);
   } else (operand === 'divide') {
-	  var x = calc.divide(numOne, numTwo);
-	  calcResult.push(x);
+   var x = calc.divide(numOne, numTwo);
+   calcResult.push(x);
   }
-}
+}//calculate
 
 
 
 app.listen(port, function(){
 	console.log('listening on port', port);
 });
+}
