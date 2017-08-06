@@ -5,14 +5,14 @@ $(document).ready(function(){
    $('#add').on('click', function(){
        var numOne = $('#numOne').val();
        var numTwo = $('#numTwo').val();
-       
+
       console.log('add button clicked');
       var calcData = {
           numOne: numOne,
           numTwo: numTwo,
           type: 'add'
-
       };//calcData
+      
         $.ajax({
             method: "POST",
             url: '/operation',
