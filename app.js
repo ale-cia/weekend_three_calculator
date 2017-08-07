@@ -27,9 +27,9 @@ app.get('/operation', function(req, res){
 	res.send(calcResult);
 });
 
-//Take in results and determine type to make calculations
+//Take in results and determine 'type' to make calculations
 function calculate(result) {
-	//compare
+	//
    var numOne = result.numOne;
    var numTwo = result.numTwo;
    var operand = result.type;
@@ -63,4 +63,4 @@ function calculate(result) {
 
 app.listen(port, function(){
 	console.log('listening on port', port);
-}); //
+});

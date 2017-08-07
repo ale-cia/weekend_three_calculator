@@ -6,7 +6,7 @@ $(document).ready(function(){
        var numOne = $('#numOne').val();
        var numTwo = $('#numTwo').val();
 
-    //   console.log('add button clicked');
+    //console.log('add button clicked');
       var calcData = {
           numOne: numOne,
           numTwo: numTwo,
@@ -40,7 +40,7 @@ $(document).ready(function(){
        var numOne = $('#numOne').val();
        var numTwo = $('#numTwo').val();
 
-    //   console.log('subtract button clicked');
+    //console.log('subtract button clicked');
       var calcData = {
           numOne: numOne,
           numTwo: numTwo,
