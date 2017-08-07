@@ -5,7 +5,7 @@
         <title>Calculator</title>
         <script type="text/javascript" src="jquery.js"></script>
         <script type="text/javascript" src=client.js></script>
-        <link rel="stylesheet" href="calc.css"></script>
+        <link rel="stylesheet" href="animate.css"></script>
 
     </head>
     <body>
@@ -14,19 +14,28 @@
            <!--Input box for first number  -->
            <input id="numOne" type="text">
 
-               <!--Buttons for operators  -->
-               <button id="add" type="button">+</button>
-               <button id="subtract" type="button">-</button>
-               <button id="multiply" type="button">*</button>
-               <button id="divide" type="button">/</button>
 
            <!--Input box for second number  -->
            <input id="numTwo" type="text">
-           <button id="equals" type="button">=</button>
+
+
+           <!--Buttons for operators  -->
+           <button id="add" type="button">+</button>
+           <button id="subtract" type="button">-</button>
+           <button id="multiply" type="button">*</button>
+           <button id="divide" type="button">/</button>
+
+
+           <!--div for equals button  -->
+           <!-- <div id="equalsDiv">
+               <button id="equals">=</button>
+           </div> -->
 
               <!--Clear button  -->
-               <button id="clear" type="button">Clear</button>
-       </div>
+               <button id="clear" type="button" class="animated.infinite animated.hinge">Clear</button>
+       </div><!--Operators -->
+
+       <div id="display"></div>
 
     </body>
 </html>

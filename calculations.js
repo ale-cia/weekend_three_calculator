@@ -1,5 +1,9 @@
+//functions for operations
+
 function add(num1, num2){
-  var result = num1 + num2;
+ // numOne = $('#numOne').val();
+ // numTwo = $('#numTwo').val();
+  var result = numOne + numTwo;
   return result;
 }
 
@@ -26,7 +30,7 @@ console.log(divide(12, 2));
 
 
 module.exports = {
-    //name of function + what the function does
+    //name of function and what the function does
    add: add,
    subtract: subtract,
    multiply: multiply,

@@ -8,7 +8,7 @@ var port = 5000;
 var calc = require('./calculations.js');
 console.log(calc);
 
-//initilize
+//initialize empty array
 var calcResult = [];
 
 app.use(express.static('public'));
@@ -20,6 +20,7 @@ app.post('/operation', function(req, res){
   console.log(req.body);
   res.sendStatus(201);
   var getResult = req.body;
+  calculate(getResult);
 });
 
 app.get('/operation', function(req, res){
@@ -37,18 +38,24 @@ function calculate(result) {
    calcResult = [];
 
    if(operand === 'add'){
-	  var x = calc.add(numOne, numTwo);
-	  //push the result into the array
-	  calcResult.push(x);
+   var newNum = calc.add(numOne, numTwo);
+   console.log(newNum);
+   //push the result into the array
+   calcResult.push(newNum);
   } else if (operand === 'subtract') {
-	   var x = calc.subtract(numOne, numTwo);
-	  calcResult.push(x);
+    var newNum = calc.subtract(numOne, numTwo);
+    console.log(newNum);
+   calcResult.push(newNum);
+
   } else if (operand === 'multiply') {
-	  var x = calc.multiply(numOne, numTwo);
-	  calcResult.push(x);
-  } else (operand === 'divide') {
-   var x = calc.divide(numOne, numTwo);
-   calcResult.push(x);
+   var newNum = calc.multiply(numOne, numTwo);
+   console.log(newNum);
+   calcResult.push(newNum);
+
+  } else if (operand === 'divide') {
+   var newNum = calc.divide(numOne, numTwo);
+   console.log(newNum);
+   calcResult.push(newNum);
   }
 }//calculate
 
@@ -56,5 +63,4 @@ function calculate(result) {
 
 app.listen(port, function(){
 	console.log('listening on port', port);
-});
-}
+}); //
